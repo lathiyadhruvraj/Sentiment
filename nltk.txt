@@ -1,4 +1,3 @@
-nltk
 brown
 punkt
 wordnet
