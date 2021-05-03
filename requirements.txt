@@ -1,6 +1,5 @@
 absl-py==0.11.0
 astunparse==1.6.3
-boto==2.49.0
 certifi==2020.12.5
 chardet==4.0.0
 click==7.1.2
@@ -26,6 +25,7 @@ opt-einsum==3.3.0
 pandas==1.2.4
 protobuf==3.14.0
 PySocks==1.7.1
+python==3.8.8
 python-dateutil==2.8.1
 python-dotenv==0.17.1
 pytz==2021.1
