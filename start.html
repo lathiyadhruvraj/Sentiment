@@ -1,0 +1,50 @@
+{% extends "base.html" %}
+
+
+{% block title %} Start Page {% endblock %}
+
+# -------------------------------------------------------------------------------------------------------- #
+
+
+{% block content %}
+<h1 >TWITTER SENTIMENT ANALYSIS </h1>
+
+<form action="/" method="POST">
+  <label for="search">Search: Enter Hot Topic Here</label><br>
+  <input type="text" id="search" name="search" ><br><br>
+  <label for="no_of_tweets">No of Tweets to analyse (Up to 1000 Only)</label><br>
+  <input type="text" id="no_of_tweets" name="no_of_tweets" ><br><br>
+  <input type="submit" value="Submit">
+</form>
+
+{% endblock %}
+
+# -------------------------------------------------------------------------------------------------------- #
+
+{% block result %}
+
+<br><br>
+<div style="background-color:#ccffd1;">
+    <h1 style="border:4px dotted #8c8f00;">
+        TWEETS SUMMARY (BASED ON TEXTBLOB):
+        <b> POSITIVE : {{ pos }} | NEUTRAL : {{ neu }} | NEGATIVE : {{ neg }}</b>
+    </h1>
+</div>
+<br><br>
+
+<div style="background-color:#fcffcf;">
+    <h1 style="border:4px dotted #8c8f00;">
+        "{{name}}" TWEET Sentiment using Textblob Library
+    </h1>
+      {{together | safe}}
+</div>
+
+<br><br>
+
+<div style="background-color:#c7f2ff;">
+    <h1 style="border:4px dotted #8c8f00;">
+        "{{name}}" Extracted Tweets Result
+    </h1>
+        {{data | safe}}
+</div>
+{% endblock %}
