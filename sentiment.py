@@ -11,15 +11,24 @@ warnings.filterwarnings('ignore')
 
 # credentials
 load_dotenv()
-consumer_key = os.getenv('consumer_key')
-consumer_secret = os.getenv('consumer_secret')
-access_token = os.getenv('access_token')
-access_token_secret = os.getenv('access_token_secret')
+#consumer_key = os.getenv('consumer_key')
+#consumer_secret = os.getenv('consumer_secret')
+#access_token = os.getenv('access_token')
+#access_token_secret = os.getenv('access_token_secret')
 
 # consumer_key = os.environ['consumer_key']
 # consumer_secret = os.environ['consumer_secret']
 # access_token = os.environ['access_token']
 # access_token_secret = os.environ['access_token_secret']
+
+#s3 = S3Connection(os.environ['consumer_key'], os.environ['consumer_secret'])
+#s4 = S3Connection(os.environ['access_token'], os.environ['access_token_secret'])
+
+consumer_key='Yi6HI4uawDXnC2LTEHLCdJTxr'
+consumer_secret='adaz260pZR0o5S0dGRVYA1A1erFTQK0B4cp7PijOH6lPepbW1A'
+
+access_token='1361341447237038080-iXzZQqgWZJwodmEytnu2yup8guAaNs'
+access_token_secret='rNa5NAlKOHVsViio8XatUv28Old3pOl6DXBNVflBA0rJv'
 
 
 
